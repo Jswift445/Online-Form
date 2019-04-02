@@ -1,0 +1,511 @@
+/*==========================================
+      base style
+===========================================*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Merriweather', serif;
+	line-height: 1.6;
+	margin: 0;
+	width: 93%;
+}
+
+.review {
+  height: 100px;
+	width: 100%;
+	padding: 0px 0px 0px 30px;
+}
+
+h1 {
+  padding: 25px;
+}
+
+.code{
+  text-align: center;
+  border: 6px solid ;
+  text-transform: uppercase;
+  background: #000033;
+  color: #fff;
+  height: 110px;
+  margin: auto -30.4px;
+
+}
+
+.news{
+  text-align: center;
+  padding: 5px;
+	font-size: 28px;
+}
+
+
+.info{
+  text-align: center;
+  color: grey;
+}
+
+hr{
+  border: 4px solid;
+  margin-top: 35px;
+	width: 107%;
+}
+.contact{
+	text-align: left;
+	font-size: 20px;
+	margin: 0px -20px;
+}
+label {
+	display: block;
+	margin: 0px 5px;
+}
+.thin {
+  border: 2px solid;
+  margin: -5px;
+	width: 108%;
+}
+
+.input-blink input{
+	padding-left: 15px;
+}
+#name,
+#mail,
+#phone,
+#street,
+#city,
+#state
+ {
+
+  background-color: lightgrey;
+  width: 99%;
+	height: 45px;
+	border-radius: 5px;
+	border: none;
+	margin: 5px;
+}
+#zipcode{
+	background-color: lightgrey;
+	width: 30%;
+ height: 45px;
+ border-radius: 5px;
+ border: none;
+ margin: 5px;
+}
+
+input[id="name"]::-webkit-input-placeholder {
+	text-align: right;
+	padding: 25px;
+}
+input[id="mail"]::-webkit-input-placeholder {
+	text-align: right;
+	padding: 25px;
+}
+input[id="state"]::-webkit-input-placeholder{
+	padding: 15px;
+}
+
+.html input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+.letter {
+	margin-left:-22px;
+}
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin: 2px 0px 10px 5px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 13px;
+  width: 13px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 3px;
+  top: -2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.pushed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 13px;
+  width: 13px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .pushed {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .pushed {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.pushed:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .pushed:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .pushed:after {
+ 	top: 4px;
+	left: 4px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: white;
+}
+
+
+#comment {
+  background-color: lightgrey;
+  width: 106%;
+	height: 130px;
+	border-radius: 5px;
+	border: none;
+	margin: 3px;
+}
+
+.submit{
+	display:flex;
+	height: 100px;
+	width: 107%;
+	padding: 0px 0px 0px 0px;
+}
+
+.button {
+ background-color: #20B2AA;
+ font-size: 25px!important;
+ border: none;
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+ border-radius: 5px;
+ flex: 2;
+}
+
+.copy{
+	text-align: center;
+	margin: 25px 0px 0px 25px;
+	color: grey;
+}
+
+/*==========================================
+      media query
+===========================================*/
+
+@media only screen and (min-width: 768px) {
+
+	.review {
+
+	  height: 100px;
+		width: 105.5%;
+		padding: 0px 0px 0px 30px;
+	}
+
+	.code{
+	  text-align: center;
+	  border: 6px solid ;
+	  text-transform: uppercase;
+	  background: #000033;
+	  color: #fff;
+	  height: 110px;
+	  margin: auto -30.4px;
+
+	}
+	.news{
+	  text-align: center;
+	  padding: 5px;
+		margin-right: -3em;
+		font-size: 28px;
+	}
+	.info{
+	  text-align: center;
+	  color: grey;
+		margin-right: 4em;
+	}
+	hr {
+		width: 80%;
+		margin-left: 7em;
+	}
+  .thin {
+		width:80%;
+		margin: -5px 7em;
+	}
+	.contact{
+		text-align: left;
+		font-size: 20px;
+		margin: -20px 4em;
+	}
+label {
+ display: inline-block;
+ width: 140px;
+ text-align: left;
+ margin: 0px 0px 29px 7em;
+
+}
+
+#name,
+#mail,
+#phone,
+#street,
+#city,
+#state
+ {
+ width: 60%;
+ margin-left: 0em;
+}
+#zipcode{
+	   width: 12%;
+		 margin-left: 0em;
+  }
+	p {
+		margin-left: 7em;
+	}
+	.letter{
+ 		text-align: left;
+ 		margin: 10px 2.6em;
+ 	}
+	hr{
+	  border: 2px solid;
+	  margin-top: 35px;
+	}
+
+	/* The container */
+	.container {
+	  display: block;
+	  position: relative;
+	  padding-left: 40px;
+	  margin: 0px 0px 10px 110px;
+	  cursor: pointer;
+	  font-size: 18px;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  user-select: none;
+	}
+
+	/* Hide the browser's default checkbox */
+	.container input {
+	  position: absolute;
+	  opacity: 0;
+	  cursor: pointer;
+	  height: 0;
+	  width: 0;
+	}
+
+	/* Create a custom checkbox */
+	.checkmark {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  height: 13px;
+	  width: 13px;
+	  background-color: #eee;
+	}
+
+	/* On mouse-over, add a grey background color */
+	.container:hover input ~ .checkmark {
+	  background-color: #ccc;
+	}
+
+	/* When the checkbox is checked, add a blue background */
+	.container input:checked ~ .checkmark {
+	  background-color: #2196F3;
+	}
+
+	/* Create the checkmark/indicator (hidden when not checked) */
+	.checkmark:after {
+	  content: "";
+	  position: absolute;
+	  display: none;
+	}
+
+	/* Show the checkmark when checked */
+	.container input:checked ~ .checkmark:after {
+	  display: block;
+	}
+
+	/* Style the checkmark/indicator */
+	.container .checkmark:after {
+	  left: 3px;
+	  top: -2px;
+	  width: 5px;
+	  height: 10px;
+	  border: solid white;
+	  border-width: 0 3px 3px 0;
+	  -webkit-transform: rotate(45deg);
+	  -ms-transform: rotate(45deg);
+	  transform: rotate(45deg);
+	}
+
+
+	/* Hide the browser's default radio button */
+	.container input {
+	  position: absolute;
+	  opacity: 0;
+	  cursor: pointer;
+	}
+
+	/* Create a custom radio button */
+	.pushed {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  height: 13px;
+	  width: 13px;
+	  background-color: #eee;
+	  border-radius: 50%;
+	}
+
+	/* On mouse-over, add a grey background color */
+	.container:hover input ~ .pushed {
+	  background-color: #ccc;
+	}
+
+	/* When the radio button is checked, add a blue background */
+	.container input:checked ~ .pushed {
+	  background-color: #2196F3;
+	}
+
+	/* Create the indicator (the dot/circle - hidden when not checked) */
+	.pushed:after {
+	  content: "";
+	  position: absolute;
+	  display: none;
+	}
+
+	/* Show the indicator (dot/circle) when checked */
+	.container input:checked ~ .pushed:after {
+	  display: block;
+	}
+
+	/* Style the indicator (dot/circle) */
+	.container .pushed:after {
+	 	top: 4px;
+		left: 4px;
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		background: white;
+	}
+
+
+	#comment {
+
+	  background-color: lightgrey;
+	  width: 83%;
+		height: 130px;
+		border-radius: 5px;
+		border: none;
+		margin-left: 109px;
+	}
+
+	.submit{
+		display:flex;
+		height: 100px;
+		width: 83%;
+		margin-left: 109px;
+	}
+
+	.button {
+	 background-color: #20B2AA;
+	 font-size: 25px!important;
+	 border: none;
+	 color: white;
+	 padding: 15px 32px;
+	 text-align: center;
+	 text-decoration: none;
+	 display: inline-block;
+	 font-size: 16px;
+	 margin: 4px 2px;
+	 cursor: pointer;
+	 border-radius: 5px;
+	 flex: 2;
+	}
+
+	.copy{
+		text-align: center;
+		margin: 25px 0px 0px 25px;
+		color: grey;
+	}
+}
