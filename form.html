@@ -15,40 +15,41 @@
   <p class="info">Get the latest news on how your code is doing right in your inbox</p>
 	<hr>
 	<hr class="thin">
-  <h1 class="contact">Contact Information</h1>
-
-  <form action="/online-form-page" method="post">
+	<form action="/Users/swift/Desktop/Online-Form/form.html " method="post">
+	<fieldset id="line">
+  <legend class="contact">Contact Information</legend>
 
 
 			<div class="input-blink">
 		<div class="name">
         <label for="name">Full Name</label>
-        <input type="text" id="name"  autofocus="autofocus" name="user_name" placeholder="Required">
-   </div>
+
+        <input type="text" id="name" name="user_name" placeholder="Required">
+				</div>
       <div class="email">
+				Email
+				</div>
+         <input type="text" id="mail" name="email" placeholder="Required">
 
-        <label for="mail">Email</label>
-
-      <input type="text" id="mail" placeholder="Required">
-			</div>
     <div class="phone">
-      <label for="phone">Phone Number</label>
-    <input type="text"  id="phone">
-		</div>
+      Phone Number
+			</div>
+    <input type="text"  id="phone" name="phoneNumber">
+
     <div class="street">
       <label for="street">Street Address</label>
-     <input type="text" id="street">
+     <input type="text" id="street" name="street">
 		 </div>
      <div class="city">
        <label for="city">City</label>
-     <input type="text" id="city">
+     <input type="text" id="city" name="city">
 		 </div>
      <div class="state">
         <label for="state">State</label>
     <input type="text" name="state" id="state" placeholder="Choose a state" list="cityname">
 		</div>
     <datalist id="cityname">
-  <select>
+  <select id="DataCity" name="city">
   	<option value="AL">Alabama</option>
 	  <option value="AK">Alaska</option>
 	  <option value="AZ">Arizona</option>
@@ -111,44 +112,38 @@
     <option value="AE">Armed Forces Others</option>
 </select>
     </datalist>
+
   <div class="zipcode">
     <label for="zipcode">Zip Code</label>
-  <input type="text" id="zipcode">
+  <input type="text" id="zipcode" name="zip">
 </div>
 </div>
-  </form>
+</fieldset>
+	<hr class="newline">
 
-	<hr>
-	<h1 class="letter">Newsletter</h1>
+	<fieldset id="line2">
+	<legend class="letter">Newsletter</legend>
 	<p>Select the newsletter you would like to recieve</p>
-	<label class="container">HTML News
-     <input type="checkbox" >
-      <span class="checkmark"></span>
-    </label>
-		<label class="container">CSS News
-	     <input type="checkbox" >
-	      <span class="checkmark"></span>
-	    </label>
-			<label class="container">Javascript News
-		     <input type="checkbox" >
-		      <span class="checkmark"></span>
-		    </label>
+	  <input type="checkbox" id="CodeCheck" name="code1" value="HTML"> HTML News<br>
+		<input type="checkbox" id="CodeCheck2" name="code2" value="CSS"> CSS News<br>
+	  <input type="checkbox" id="CodeCheck3" name="code3" value="Javascript"> Javascript News<br>
+ <br>
 	<p>Newsletter format</p>
- 	<label class="container">HTML
-      <input type="radio"  name="radio">
-      <span class="pushed"></span>
-  </label>
-  <label class="container">Plain Text
-      <input type="radio"  name="radio">
-       <span class="pushed"></span>
-   </label>
+
+ 	 <input type="radio" name="text" id="CodeRadio" value="HTML">HTML<br>
+   <input type="radio" name="text" id="CodeRadio2" value="Plain">Plain Text<br>
+<br>
 	 <p>Other topics you'd like to hear about</p>
-	 <label for="comment"> comment: </label>
+
 <textarea id="comment" name="user_comment" placeholder="Please leave a comment!"></textarea>
 		<br><br>
 	  <div class="submit">
 		<input type="submit"  class="button" value="Sign Up">
 	</div>
+
+	</fieldset>
+</form>
+
 
 	<footer class="copy">
 		Copyright The Code Review
