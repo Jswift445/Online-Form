@@ -9,8 +9,8 @@
 body {
 	font-family: 'Merriweather', serif;
 	line-height: 1.6;
-	margin: 0;
-	width: 93%;
+	margin: auto;
+	max-width: 86%;
 }
 
 .review {
@@ -27,7 +27,7 @@ body {
   text-transform: uppercase;
   background: #000033;
   color: #fff;
-  height: 100px;
+  height: 80px;
   margin: auto -48px;
 
 }
@@ -46,8 +46,8 @@ body {
 
 hr{
   border: 4px solid;
-  margin-top: 35px;
-	width: 107%;
+  margin-bottom: 45px;
+	width: 113%;
 }
 .contact{
 	text-align: left;
@@ -64,8 +64,8 @@ hr{
 	border: none;
 }
 
-label {
-	display: block;
+label  {
+
 	margin: 0px 5px;
 }
 .email{
@@ -99,8 +99,8 @@ label {
 
 .thin {
   border: 2px solid;
-  margin: -5px;
-	width: 108.5%;
+  margin: -40px 0px 15px;
+	width: 113%;
 }
 
 .newline {
@@ -124,6 +124,7 @@ label {
 	margin: 5px 0px 15px;
 }
 #zipcode{
+	display: block;
 	background-color: lightgrey;
 	width: 30%;
  height: 45px;
@@ -148,8 +149,37 @@ input[id="state"]::-webkit-input-placeholder{
 .letter {
 	margin-left: 0px;
 	font-size: 20px;
-
+  margin-top: 10px;
 }
+
+label[for=HTML]{
+	display: inline-block;
+  width: 140px;
+  text-align: left;
+	margin: 0px 0px 15px 0em;
+}
+
+label[for=CSS]{
+	display: inline-block;
+  width: 140px;
+  text-align: left;
+	margin: 0px 0px 15px 0em;
+}
+
+label[for=Javascript]{
+	display: inline-block;
+  width: 140px;
+  text-align: left;
+	margin: 0px 0px 15px 0em;
+}
+
+label[for=plain]{
+	display: inline-block;
+  width: 140px;
+  text-align: left;
+	margin: 0px 0px 15px 0em;
+}
+
 
 #comment {
   background-color: lightgrey;
@@ -197,8 +227,10 @@ input[id="state"]::-webkit-input-placeholder{
 
 	.review {
 	  height: 100px;
-		width: 105.5%;
-		padding: 0px 0px 0px 30px;
+		width: 94%;
+		padding: 0px 0px 0px 95px;
+
+
 	}
 
 	.code{
@@ -207,8 +239,8 @@ input[id="state"]::-webkit-input-placeholder{
 	  text-transform: uppercase;
 	  background: #000033;
 	  color: #fff;
-	  height: 110px;
-	  margin: auto -30.4px;
+	  height: 80px;
+	  margin: auto -5.5em ;
 
 	}
 	.news{
@@ -230,7 +262,7 @@ input[id="state"]::-webkit-input-placeholder{
   .thin {
 		border: 2px solid;
 		width:80%;
-		margin: -5px 7em;
+		margin: -40px -15px 15px 7em;
 	}
 	.contact{
 		text-align: left;
@@ -244,22 +276,35 @@ label {
  width: 140px;
  text-align: left;
  margin: 0px 0px 29px 6.5em;
-
 }
-.email{
+
+label[for=HTML]{
 	display: inline-block;
-	width: 140px;
-	text-align: left;
-	margin: 0px 0px 29px 6.5em;
+  width: 140px;
+  text-align: left;
+	margin: 0px 0px 15px 0em;
 }
 
-.phone {
+label[for=CSS]{
 	display: inline-block;
-	width: 140px;
-	text-align: left;
-	margin: 0px 0px 29px 6.5em;
+  width: 140px;
+  text-align: left;
+	margin: 0px 0px 15px 0em;
 }
 
+label[for=Javascript]{
+	display: inline-block;
+  width: 140px;
+  text-align: left;
+	margin: 0px 0px 15px 0em;
+}
+
+label[for=plain]{
+	display: inline-block;
+  width: 140px;
+  text-align: left;
+	margin: 0px 0px 15px 0em;
+}
 #mail{
 	width:60%;
   margin-left: 0em;
@@ -279,6 +324,7 @@ label {
  margin-left: 0em;
 }
 #zipcode{
+	   display: inline-block;
 	   width: 12%;
 		 margin-left: 0em;
   }
@@ -300,6 +346,7 @@ label {
 p{
 	margin: 0px 6em;
 }
+
 #CodeCheck,
 #CodeCheck2,
 #CodeCheck3{
