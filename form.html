@@ -18,35 +18,39 @@
 	<form action="/Users/swift/Desktop/Online-Form/form.html " method="post">
 	<fieldset id="line">
   <legend class="contact">Contact Information</legend>
+
 			<div class="input-blink">
+
 		<div class="name">
         <label for="name">Full Name</label>
-
         <input type="text" id="name" name="user_name" placeholder="Required">
 				</div>
-      <div class="email">
-				<label for="email">Email</label>
 
+      <div class="email">
+				<label for="mail">Email</label>
          <input type="text" id="mail" name="email" placeholder="Required">
       </div>
 
     <div class="phone">
       <label for="phone">Phone Number</label>
-
     <input type="text"  id="phone" name="phoneNumber">
    </div>
+
     <div class="street">
       <label for="street">Street Address</label>
      <input type="text" id="street" name="street">
 		 </div>
+
      <div class="city">
        <label for="city">City</label>
      <input type="text" id="city" name="city">
 		 </div>
+
      <div class="state">
         <label for="state">State</label>
     <input type="text" name="state" id="state" placeholder="Choose a state" list="cityname">
 		</div>
+
     <datalist id="cityname">
   <select id="DataCity" name="city">
   	<option value="AL">Alabama</option>
@@ -113,9 +117,11 @@
     </datalist>
 
   <div class="zipcode">
-    <label for="zipcode">Zip Code</label>
+		<label for="zipcode">Zip Code</label>
   <input type="text" id="zipcode" name="zip">
+
 </div>
+
 </div>
 </fieldset>
 	<hr class="newline">
@@ -126,27 +132,27 @@
 
 <div>
 	  <input type="checkbox" id="CodeCheck" name="HTML" value="HTML">
-    <label for="HTML">HTML News</label>
-</div
-		<br>
+    <label for="CodeCheck">HTML News</label>
+</div>
+
 		<div>
 			  <input type="checkbox" id="CodeCheck2" name="CSS" value="CSS">
-		    <label for="CSS">CSS News</label>
+		    <label for="CodeCheck2">CSS News</label>
 		</div>
 		<div>
    	<input type="checkbox" id="CodeCheck3" name="javascript" value="Javascript">
-		<label for="Javascript">Javascript News</label>
+		<label for="CodeCheck3">Javascript News</label>
 	</div>
 
 	<p>Newsletter format</p>
  <div>
  	 <input type="radio" name="text" id="CodeRadio" value="HTML">
-	 <label for="HTML">HTML</label>
+	 <label for="CodeRadio">HTML</label>
  </div>
 
 	 <div>
    <input type="radio" name="text" id="CodeRadio2" value="Plain">
-	 <label for="plain">Plain Text</label>
+	 <label for="CodeRadio2">Plain Text</label>
 	 </div>
 <br>
 	 <p>Other topics you'd like to hear about</p>
