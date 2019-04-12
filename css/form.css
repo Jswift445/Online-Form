@@ -10,49 +10,47 @@ body {
 	font-family: 'Merriweather', serif;
 	line-height: 1.6;
 	margin: auto;
-	max-width: 86%;
+	max-width: 85%;
+}
+p{
+	margin-left: -14px;
 }
 
-.review {
-
-	width: 100%;
-	padding: 0px 0px 0px 26px;
-}
-
-
-
-.code{
-  text-align: center;
-  border: 6px solid ;
-  text-transform: uppercase;
-  background: #000033;
+h1.code {
+	text-align: center;
+	border: 4px solid;
+	text-transform: uppercase;
   color: #fff;
-  height: 80px;
-  margin: auto -48px;
 
 }
-
+.code {
+	margin: auto -24px;
+ background: #000033;
+}
 .news{
   text-align: center;
   padding: 5px;
 	font-size: 28px;
+	margin-left: -20px;
 }
 
 
 .info{
   text-align: center;
   color: grey;
+	margin-left: -15px;
 }
 
 hr{
   border: 4px solid;
   margin-bottom: 45px;
-	width: 113%;
+	width: 100%;
+	margin-left: -5px;
 }
 .contact{
 	text-align: left;
 	font-size: 20px;
-	margin: 30px 20px 20px 0em;
+	margin: 30px 20px 20px -1.2em;
 }
 
 #line{
@@ -66,41 +64,14 @@ hr{
 
 label  {
 
-	margin: 0px 5px;
-}
-.email{
-	display: block;
-	margin: 0px 5px;
+	margin: 0px -15px;
 }
 
-
-.phone {
-	display: block;
-	margin: 0px 5px;
-}
-
-#mail{
-	background-color: lightgrey;
-  width: 108.5%;
-	height: 45px;
-	border-radius: 5px;
-	border: none;
-	margin: 5px 0px;
-}
-
-#phone{
-	background-color: lightgrey;
-	width: 108.5%;
-	height: 45px;
-	border-radius: 5px;
-	border: none;
-	margin: 5px 0px;
-}
 
 .thin {
   border: 2px solid;
-  margin: -40px 0px 15px;
-	width: 113%;
+  margin: -40px 0px 15px -5px;
+	width: 100%;
 }
 
 .newline {
@@ -111,17 +82,19 @@ label  {
 	padding-left: 15px;
 }
 #name,
+#phone,
+#mail,
 #street,
 #city,
 #state
  {
 
   background-color: lightgrey;
-  width: 109%;
+  width: 100%;
 	height: 45px;
 	border-radius: 5px;
 	border: none;
-	margin: 5px 0px 15px;
+	margin: 5px 0px 15px -5px;
 }
 #zipcode{
 	display: block;
@@ -130,9 +103,11 @@ label  {
  height: 45px;
  border-radius: 5px;
  border: none;
- margin: 5px;
+ margin-left: -5px;
 }
-
+input:focus {
+  background-color: lightgreen!important;
+}
 input[id="name"]::-webkit-input-placeholder {
 	text-align: right;
 	padding: 25px;
@@ -144,10 +119,11 @@ input[id="mail"]::-webkit-input-placeholder {
 input[id="state"]::-webkit-input-placeholder{
 	padding: 15px;
 }
-
-
+label[for=comment]:focus {
+	background-color: lightgreen!important;
+}
 .letter {
-	margin-left: 0px;
+	margin-left: -15px;
 	font-size: 20px;
   margin-top: 10px;
 }
@@ -186,20 +162,34 @@ label[for=CodeRadio2]{
   text-align: left;
 	margin: 0px 0px 15px 0em;
 }
+#CodeCheck,
+#CodeCheck2,
+#CodeCheck3{
+	    margin-left: -10px;
+ }
 
+#CodeRadio,
+#CodeRadio2{
+	margin-left: -10px;
+}
+
+
+#comment:focus {
+	background-color: lightgreen;
+}
 #comment {
   background-color: lightgrey;
   width: 106%;
 	height: 130px;
 	border-radius: 5px;
 	border: none;
-	margin: 3px;
+	margin-left: -15px;
 }
 
 .submit{
 	display:flex;
 	height: 100px;
-	width: 107%;
+	width: 95%;
 	padding: 0px 0px 0px 0px;
 }
 
@@ -213,7 +203,7 @@ label[for=CodeRadio2]{
  text-decoration: none;
  display: inline-block;
  font-size: 16px;
- margin: 4px 2px;
+ margin: 4px -4px;
  cursor: pointer;
  border-radius: 5px;
  flex: 2;
@@ -221,7 +211,7 @@ label[for=CodeRadio2]{
 
 .copy{
 	text-align: center;
-	margin: 25px 0px 0px 25px;
+	margin: 25px 0px 0px -15px;
 	color: grey;
 }
 
@@ -231,49 +221,43 @@ label[for=CodeRadio2]{
 
 @media only screen and (min-width: 768px) {
 
-	.review {
-	  height: 100px;
-		width: 94%;
-		padding: 0px 0px 0px 95px;
-
-
-	}
-
-	.code{
-	  text-align: center;
-	  border: 6px solid ;
-	  text-transform: uppercase;
-	  background: #000033;
+	h1.code {
+		text-align: center;
+		border: 4px solid;
+		text-transform: uppercase;
 	  color: #fff;
-	  height: 80px;
-	  margin: auto -5.5em ;
 
 	}
+	.code {
+		margin: auto -100px;
+	 background: #000033;
+	}
+
 	.news{
 	  text-align: center;
 	  padding: 5px;
-		margin-right: -3em;
+		margin-right: -1em;
 		font-size: 28px;
 	}
 	.info{
 	  text-align: center;
 	  color: grey;
-		margin-right: 4em;
+		margin-right: -4em;
 	}
 	hr {
 		border: 4px solid;
-		width: 80%;
-		margin-left: 7em;
+		width: 85%;
+		margin-left: 4em;
 	}
   .thin {
 		border: 2px solid;
-		width:80%;
-		margin: -40px -15px 15px 7em;
+		width:85%;
+		margin: -40px -15px 15px 4em;
 	}
 	.contact{
 		text-align: left;
 		font-size: 20px;
-		margin: 10px 5em;
+		margin: 10px 3em;
 		font-weight: bold;
 	}
 
@@ -281,7 +265,7 @@ label {
  display: inline-block;
  width: 140px;
  text-align: left;
- margin: 0px 0px 29px 6.5em;
+ margin: 0px 0px 29px 65px;
 }
 
 label[for=HTML]{
@@ -311,35 +295,29 @@ label[for=plain]{
   text-align: left;
 	margin: 0px 0px 15px 0em;
 }
-#mail{
-	width:60%;
-  margin-left: 0em;
-}
 
-#phone{
-	width:60%;
-	margin-left: 0em;
-}
 
 #name,
+#phone,
+#mail,
 #street,
 #city,
 #state
  {
  width: 60%;
- margin-left: 0em;
+ margin-left: -1em;
 }
 #zipcode{
 	   display: inline-block;
 	   width: 12%;
-		 margin-left: 0em;
+		 margin-left: -1em;
   }
 	p {
-		margin-left: 7em;
+		margin-left: 5em;
 	}
 	.letter{
  		text-align: left;
- 		margin: 5px 4.5em;
+ 		margin: 5px 2.5em;
 		font-weight: bold;
  	}
 	#line2 {
@@ -350,37 +328,36 @@ label[for=plain]{
 	  margin-top: 35px;
 	}
 p{
-	margin: 0px 6em;
+	margin: 25px 3.5em;
 }
 
 #CodeCheck,
 #CodeCheck2,
 #CodeCheck3{
-	    margin-left: 100px;
+	    margin-left: 57px;
  }
 
 #CodeRadio,
 #CodeRadio2{
-	margin-left: 100px;
+	margin-left: 57px;
 }
 
 
 
 	#comment {
-
 	  background-color: lightgrey;
 	  width: 83%;
 		height: 130px;
 		border-radius: 5px;
 		border: none;
-		margin-left: 98px;
+		margin-left: 63px;
 	}
 
 	.submit{
 		display:flex;
 		height: 100px;
 		width: 83%;
-		margin-left: 98px;
+		margin-left: 70px;
 	}
 
 	.button {
